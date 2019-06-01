@@ -2,12 +2,14 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="Application/canvas.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="canvas.css" type="text/css" media="screen" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-    <?php
-    require("Application/menu.php");
-    ?>
+    <div id="display">
+     <?php
+      require("Application/menu.php");
+      ?>
+     </div>
 </body>
 </html>

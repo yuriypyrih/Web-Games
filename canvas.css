@@ -23,25 +23,55 @@ body {
 #display {
   background-color: #ffffff;
   background-image: url("../img/background-tile.png");
-  align-content: center;
+
   width: 900px;
   height: 675px;
 }
 
 .menu-btn {
   position: relative;
-  top: 200px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #5f4b3a; /* Green */
-  border: 10px solid #202430; /* Brown */
+  background-color: #5f4b3a;
+  border: 10px solid #202430;
   color: white;
   padding: 15px 32px;
-  margin-top: 25px;
+  margin-top: 15px;
   text-align: center;
   text-decoration: none;
   display: block;
   height: 80px;
   width: 410px;
   font-size: 26px;
+}
+
+.hover-btn:hover {
+  background-color: #202430;
+  border: 10px solid #5f4b3a;
+}
+
+.games-btn {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  background-color: #5f4b3a;
+  border: 10px solid #202430;
+  color: white;
+  padding: 45px 32px;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 150px;
+  width: 380px;
+  font-size: 26px;
+}
+
+#games-back-btn {
+  padding-top: 25px;
+  top: 100px;
+  height: 100px;
+  width: 780px;
 }
