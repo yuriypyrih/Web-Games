@@ -5,14 +5,14 @@ include("functions.php");
 ?>
 <html>
 <head>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="canvas.css" type="text/css" media="screen" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-    <?php
+   <?php
         print_message();
         echo "<br>";
-    ?>
+    ?> 
 <form name="login" method="post" action="login.php">
 <table border="0" width="225" align="center">
     <tr>

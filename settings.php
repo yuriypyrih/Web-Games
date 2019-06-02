@@ -9,20 +9,19 @@
     <div id="display">
         <table>
             <tr>
+                <td width="71"><span style="font-size:16px;">Αλλάξτε το επίπεδο δυσκολίας:</span></td>
                 <td>
-                    <a class="games-btn hover-btn" href="#1">Λαβύρινθος</a>
-                </td>
-                <td>
-                <a class="games-btn hover-btn" href="#2">Ταίριασμα ήχων</a>
+                    <a href="#2">Εύκολο</a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a class="games-btn hover-btn" href="#3">Βρες το διαφορετικό</a>
+                    <a class="settings-btn hover-btn" href="#3">Αλλαγή στοιχείων χρήστη</a>
                 </td>
                 <td>
-                    <a class="games-btn hover-btn" href="#4">Χρονική σειρά</a>
+                    <a class="settings-btn hover-btn" href="#4">Αλλαγή κωδικού πρόσβασης</a>
                 </td>
+            </tr>
         </table>
         <a  id="games-back-btn" class="hover-btn games-btn" href="index.php">ΠΙΣΩ</a>
     

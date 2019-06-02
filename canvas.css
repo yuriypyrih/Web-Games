@@ -75,3 +75,25 @@ body {
   height: 100px;
   width: 780px;
 }
+
+#sumbit-btn {
+  background-color: #5f4b3a;
+}
+
+.settings-btn {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  background-color: #5f4b3a;
+  border: 10px solid #202430;
+  color: white;
+  padding: 35px 32px;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 150px;
+  width: 380px;
+  font-size: 26px;
+}
