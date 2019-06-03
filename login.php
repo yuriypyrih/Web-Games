@@ -3,6 +3,7 @@
     include "connect.php";
     include "functions.php";
 
+
     $username = mysqli_real_escape_string($link, $_POST['username']);
     $password = mysqli_real_escape_string($link, $_POST['password']);
 
@@ -12,7 +13,7 @@
         exit();
     }
 
-    $sql = "SELECT username, password, id_role FROM user WHERE username='$username' and password='$password'";
+    $sql = "SELECT username, password FROM user WHERE username='$username' and password='$password'";
     $result = mysqli_query($link, $sql) or die(mysqli_error($link));
     $count = mysqli_num_rows($result);
 

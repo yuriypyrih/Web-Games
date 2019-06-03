@@ -1,6 +1,11 @@
 <?php
-include("login.php"); // Include Login Script
+include "connect.php"; // Include Connect Script
+include "functions.php";
+session_start();
 
+//Print any messages
+print_message();
+   
 if(isset($_SESSION["username"])){
     header("location: main.php"); //Redirecting to main Menu
 }

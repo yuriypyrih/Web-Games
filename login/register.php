@@ -9,12 +9,14 @@ include "functions.php";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_POST['submit'])) && ($_POST['submit'] == 'Submit')) {
 
-    $fname = mysqli_real_escape_string($link, $_POST['fname']);
-    $lname = mysqli_real_escape_string($link, $_POST['lname']);
+    $userID = uniqid();
     $username = mysqli_real_escape_string($link, $_POST['username']);
     $password = mysqli_real_escape_string($link, $_POST['password']);
-    $email = mysqli_real_escape_string($link, $_POST['email']);
-    $id_role = mysqli_real_escape_string($link, $_POST['id_role']);
+    $gender = mysqli_real_escape_string($link, $_POST['gender']);
+    $city = mysqli_real_escape_string($link, $_POST['city']);
+    $birthdate = mysqli_real_escape_string($link, $_POST['birthday']);
+    $education = mysqli_real_escape_string($link, $_POST['education']);
+    $difficulty_level = 1;
 
     if (empty($fname) || empty($lname) || (empty($username)) || empty($password)) {
         send_message('Πρέπει να συμπληρώσετε τα υποχρεωτικά πεδία (με τον αστερίσκο *)', 'error');
@@ -26,23 +28,24 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_POST['submit'])) && ($_POST
 
     $query = "insert into user 
                             (
-                                fname,
-                                lname,
+                                userID,
                                 username,
                                 password,
-                                email,
-                                id_role,
-                                dt_registered
+                                gender,
+                                city,
+                                birthdate,
+                                education,
+                                difficulty_level
                             ) 
                             Values
                             (
-                                '$fname',
-                                '$lname',
+                                '$userID',
                                 '$username',
                                 '$password',
-                                '$email',
-                                '$id_role',
-                                 now()
+                                '$gender',
+                                '$birthdate',
+                                '$education',
+                                '$difficulty_level'
                             )";
 //echo $query;
 //die;
@@ -50,12 +53,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && (isset($_POST['submit'])) && ($_POST
 
     if ($result) {
         mysqli_commit($link);
-        send_message('Τα στοιχεία σας καταχωρήθηκαν με επιτυχία.', 'success');
+        echo'Τα στοιχεία σας καταχωρήθηκαν με επιτυχία.';
         header("Location: index.php");
         exit();
     } else {
         mysqli_rollback($link);
-        send_message('Τα στοιχεία δεν καταχωρήθηκαν λόγω προβλήματος στην βάση του συστήματος.', 'error');
+       echo 'Τα στοιχεία δεν καταχωρήθηκαν λόγω προβλήματος στην βάση του συστήματος.';
     }
 }
 ?>

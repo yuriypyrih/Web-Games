@@ -3,7 +3,7 @@
 $conn = mysqli_connect("localhost", "root", "", "icsd_web_games_db"); 
 session_start();// Starting Session 
 // Storing Session 
-$user_check = $_SESSION['login_user']; 
+$user_check = $_SESSION['username']; 
 // SQL Query To Fetch Complete Information Of User 
 $query = "SELECT username FROM User WHERE username = '$user_check'"; 
 $ses_sql = mysqli_query($conn, $query); 

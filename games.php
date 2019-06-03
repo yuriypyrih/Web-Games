@@ -1,5 +1,9 @@
+<?php
+session_start();
+//Delete this echo later
+echo " Your session is " . $_SESSION["username"];
+?>
 <!DOCTYPE HTML>
-
 <html>
 <head>
 <link rel="stylesheet" href="canvas.css" type="text/css" media="screen" />

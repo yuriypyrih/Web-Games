@@ -82,7 +82,7 @@ body {
 
 .settings-btn {
   position: relative;
-  top: 80px;
+  top: 50px;
   left: 50px;
   background-color: #5f4b3a;
   border: 10px solid #202430;
@@ -96,4 +96,17 @@ body {
   height: 150px;
   width: 380px;
   font-size: 26px;
+}
+
+.settings-update-btn {
+  background-color: #5f4b3a;
+  border: 10px solid #202430;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 70px;
+  width: 260px;
+  font-size: 20px;
 }
