@@ -14,10 +14,10 @@ echo " Your session is " . $_SESSION["username"];
         <table>
             <tr>
                 <td>
-                    <a class="games-btn hover-btn" href="#1">Λαβύρινθος</a>
+                    <a class="games-btn hover-btn" href="games1.php">Λαβύρινθος</a>
                 </td>
                 <td>
-                <a class="games-btn hover-btn" href="#2">Ταίριασμα ήχων</a>
+                <a class="games-btn hover-btn" href="games2.php">Ταίριασμα ήχων</a>
                 </td>
             </tr>
             <tr>
