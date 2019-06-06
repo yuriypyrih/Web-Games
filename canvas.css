@@ -24,6 +24,7 @@ body {
   background-color: #ffffff;
   background-image: url("../img/background-tile.png");
 
+  position: relative;
   width: 900px;
   height: 675px;
 }
